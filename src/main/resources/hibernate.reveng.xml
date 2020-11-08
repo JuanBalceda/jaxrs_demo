@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<type-mapping>
+		<sql-type jdbc-type="NVARCHAR" hibernate-type="String" /> 
+		<sql-type jdbc-type="INTEGER" hibernate-type="Long" />
+		<sql-type jdbc-type="TIMESTAMP" hibernate-type="LocalDateTime" />
+	</type-mapping>
+
+	<table catalog="jaxrs_demo" name="todos">
+		<column name="id">
+			<meta attribute="use-in-equals">true</meta>
+		</column>
+	</table>
+</hibernate-reverse-engineering>
